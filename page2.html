@@ -25,7 +25,21 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default,e <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>In JavaScript, var, let, and const are used to declare variables, but they have different scopes and behaviors.</strong> 'var' is function-scoped means it is accessible within the function. It can be updated. It is moostly used older code. Both 'let', 'const' is block-scoped. however, a const variable cannot be updated or re-declared like 'let'. It's generally recommended to use 'let' and 'constt' in modern JavaScript. <code>
+                        function example() {
+                          var varVariable = "var"; // Accessible within this function
+                          if (true) {
+                              let letVariable = "let"; // Accessible only within this block
+                              const constVariable = "const"; // Accessible only within this block
+                              console.log(varVariable); // Outputs: "var"
+                              console.log(letVariable); // Outputs: "let"
+                              console.log(constVariable); // Outputs: "const"
+                          }
+                          console.log(varVariable); // Outputs: "var"
+                          console.log(letVariable); // ReferenceError
+                          console.log(constVariable); // ReferenceError
+                      }                      
+                      </code>
                     </div>
                   </div>
                 </div>
@@ -37,7 +51,18 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>In JavaScript, null and undefined are both special values that represent the absence of a value. </strong> undefined: A variable that has been declared but has not been assigned a value is undefined. It’s also the default value of function parameters that are not provided when the function is called. <code>
+                        let myVar;
+                        console.log(myVar); // Outputs: undefined
+
+                        function greet(name) {
+                            console.log("Hello, " + name);
+                        }
+                        greet(); // Outputs: "Hello, undefined"
+                      </code> null: null is an assignment value that represents no value or no object. It implies the absence of a value or that a variable points to no object. In APIs, null is often retrieved in a place where an object can be expected but no object is relevant. <code>
+                        let myVar = null;
+                        console.log(myVar); // Outputs: null
+                      </code>
                     </div>
                   </div>
                 </div>
@@ -49,7 +74,7 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>REST API is a way of designing web services that use HTTP methods and URLs to access and manipulate data.</strong> It follows some principles such as statelessness, client-server architecture, cacheability, uniform interface, and layered system. It helps different software systems communicate with each other over the internet.
                     </div>
                   </div>
                 </div>
